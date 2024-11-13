@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "mrcnn_line_segmentation"
+  site-url: "https://sethdroberts.github.io/mrcnn_line_segmentation"
+  description: "Line segmentation on handwritten and printed text with Mask R-CNN using PyTorch"
+  repo-branch: main
+  repo-url: "https://github.com/sethdroberts/mrcnn_line_segmentation"
