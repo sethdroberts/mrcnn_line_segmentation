@@ -59,10 +59,43 @@ Additionally you can find package manager specific guidelines on
 
 ## How to use
 
-Fill me in please! Don’t forget code examples:
+First, create virtual environment:
 
 ``` python
-1+1
+# python -m venv venv/
 ```
 
-    2
+Second, activate it:
+
+``` python
+# source venv/bin/activate
+```
+
+Thirdly, install requirements:
+
+``` python
+# pip install -r requirements.txt
+```
+
+Install hooks for nbdev:
+
+``` python
+# nbdev_install_hooks
+```
+
+Once setup completed, do all coding in 00_core. As you figure out how to
+use multiple modules, add details here.
+
+For code snippets you want to exclude from any packages, use: `#| hide`
+
+For snippets to include and export: `#| export`
+
+Before commiting your changes to GitHub we recommend running
+nbdev_prepare in the terminal, which bundles the following commands:
+
+- `nbdev_export`: Builds the .py modules from Jupyter notebooks
+- `nbdev_test`: Tests your notebooks
+- `nbdev_clean`: Cleans your notebooks to get rid of extreanous output
+  for git
+- `nbdev_readme`: Updates your repo’s README.md file from your index
+  notebook.
